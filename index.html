@@ -138,7 +138,19 @@
         gap: 42px;
         align-items: start;
       }
-      .about p { margin: 0 0 16px; color: var(--muted); }
+      .about-copy p { margin: 0 0 16px; color: var(--muted); }
+      .about-photo {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+      }
+      .about-photo img {
+        width: 320px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 10px 28px rgba(19,35,47,0.12);
+      }
       .facts {
         background: var(--surface);
         border: 1px solid var(--line);
@@ -164,6 +176,7 @@
         .top { padding: 16px 0; }
         .seats li { grid-template-columns: 1fr; gap: 8px; }
         .about { grid-template-columns: 1fr; }
+        .about-photo { padding-top: 0; }
         section { padding: 56px 0; }
       }
     </style>
@@ -274,14 +287,18 @@
       <div class="wrap">
         <section id="about" style="border-top:0;">
           <div class="about">
-            <div>
+            <div class="about-copy">
               <h2>About</h2>
               <p>My path to the boardroom was not a straight line. I started out as a pilot in training with the Canadian Armed Forces, and worked as a lifeguard, a muffler shop hand, a gas pipeline worker and a sales and insurance professional.</p>
               <p>Public office taught me how to serve many stakeholders at once. Banking taught me discipline with other people’s money. Building a company taught me what it feels like when the plan meets reality.</p>
               <p>I am based in Panama and open to remote board and advisory roles, with some travel.</p>
             </div>
 
-            <div class="facts">
+            <div class="about-photo">
+              <img src="./0009-Mick-Kelly-0223-web.jpeg" alt="Mick Kelly" />
+            </div>
+
+            <div class="facts" style="grid-column: 1 / -1; margin-top: 10px;">
               <dl>
                 <dt>Credentials</dt>
                 <dd>MBA, CFP</dd>
