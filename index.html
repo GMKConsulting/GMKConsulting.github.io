@@ -17,6 +17,7 @@
         --band: #13232f;
         --band-ink: #edf0f1;
         --shadow: rgba(19, 35, 47, 0.08);
+        --photo-bg: linear-gradient(135deg, rgba(31,92,122,0.10), rgba(31,92,122,0.02));
       }
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
@@ -134,23 +135,34 @@
       .band .intro, .band .cols p { color: inherit; opacity: 0.85; }
       .about {
         display: grid;
-        grid-template-columns: 280px minmax(0, 1fr);
-        gap: 28px;
+        grid-template-columns: 260px minmax(0, 1fr);
+        gap: 24px;
         align-items: start;
       }
       .about-photo {
         display: flex;
         justify-content: center;
         align-items: flex-start;
+        background: var(--photo-bg);
+        border: 1px solid rgba(31, 92, 122, 0.10);
+        border-radius: 14px;
+        padding: 14px;
       }
       .about-photo img {
-        width: 280px;
-        max-width: 100%;
+        width: 100%;
+        max-width: 230px;
         height: auto;
-        border-radius: 8px;
+        border-radius: 10px;
         box-shadow: 0 10px 28px rgba(19,35,47,0.12);
       }
-      .about-copy p { margin: 0 0 16px; color: var(--muted); }
+      .about-copy {
+        min-width: 0;
+      }
+      .about-copy p {
+        margin: 0 0 16px;
+        color: var(--muted);
+        max-width: 48em;
+      }
       .facts {
         background: var(--surface);
         border: 1px solid var(--line);
@@ -177,7 +189,8 @@
         .top { padding: 16px 0; }
         .seats li { grid-template-columns: 1fr; gap: 8px; }
         .about { grid-template-columns: 1fr; }
-        .about-photo img { width: 100%; max-width: 320px; }
+        .about-photo { padding: 12px; }
+        .about-photo img { max-width: 240px; }
         section { padding: 56px 0; }
       }
     </style>
