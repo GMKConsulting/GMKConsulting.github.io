@@ -7,33 +7,39 @@
     <meta name="description" content="Board director and governance consultant helping organizations improve oversight, strategy, and stakeholder confidence." />
     <style>
       :root {
-        --bg: #edf0f1;
+        --bg: #eef2f3;
         --surface: #ffffff;
-        --ink: #13232f;
-        --muted: #4d5f6b;
-        --line: #c9d2d7;
+        --ink: #16242f;
+        --muted: #526575;
+        --line: #d7dfe3;
         --accent: #1f5c7a;
         --accent-ink: #ffffff;
-        --band: #13232f;
-        --band-ink: #edf0f1;
+        --accent-soft: #eaf3f7;
+        --band: #14202c;
+        --band-ink: #edf3f5;
         --shadow: rgba(19, 35, 47, 0.08);
-        --photo-bg: linear-gradient(135deg, rgba(31,92,122,0.10), rgba(31,92,122,0.02));
+        --photo-bg: linear-gradient(135deg, rgba(31,92,122,0.12), rgba(31,92,122,0.03));
       }
+
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
       body {
         margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Segoe UI", Arial, sans-serif;
         background: var(--bg);
         color: var(--ink);
-        line-height: 1.6;
+        line-height: 1.65;
       }
       a { color: var(--accent); }
       img { max-width: 100%; display: block; }
-      .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+      .wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
       header {
-        background: rgba(255,255,255,0.8);
-        backdrop-filter: blur(6px);
+        background: rgba(255,255,255,0.78);
+        backdrop-filter: blur(10px);
         border-bottom: 1px solid var(--line);
         position: sticky;
         top: 0;
@@ -45,38 +51,67 @@
         align-items: center;
         padding: 18px 0;
       }
-      .name { font-weight: 700; letter-spacing: 0.02em; }
+      .name {
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
       nav { display: flex; gap: 22px; flex-wrap: wrap; }
       nav a {
         text-decoration: none;
         color: var(--ink);
         font-size: 0.95rem;
+        font-weight: 600;
       }
       nav a:hover { text-decoration: underline; }
-      .hero { padding: 64px 0 72px; }
-      h1, h2, h3 { line-height: 1.12; margin: 0 0 16px; }
+      .hero {
+        padding: 80px 0 68px;
+      }
+      .eyebrow {
+        margin: 0 0 16px;
+        color: var(--accent);
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        font-size: 0.76rem;
+        font-weight: 700;
+      }
+      h1, h2, h3 {
+        line-height: 1.08;
+        margin: 0 0 16px;
+        letter-spacing: -0.03em;
+      }
       h1 {
-        font-size: clamp(2.6rem, 5vw, 4.5rem);
-        max-width: 12.5em;
-        letter-spacing: -0.04em;
+        font-size: clamp(2.8rem, 6.2vw, 5rem);
+        max-width: 12.4em;
       }
       .lede {
         color: var(--muted);
-        font-size: 1.2rem;
-        max-width: 40em;
+        font-size: clamp(1.06rem, 1.3vw, 1.22rem);
+        max-width: 42em;
         margin: 0 0 28px;
       }
       .btns { display: flex; flex-wrap: wrap; gap: 12px; }
       .btn {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 22px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+      .btn.primary {
         background: var(--accent);
         color: var(--accent-ink);
-        text-decoration: none;
-        padding: 14px 22px;
-        border-radius: 6px;
-        font-weight: 700;
+        box-shadow: 0 10px 26px rgba(31, 92, 122, 0.18);
       }
-      .btn.alt {
+      .btn.secondary {
         background: transparent;
         color: var(--ink);
         border: 1.5px solid var(--ink);
@@ -85,7 +120,9 @@
         padding: 72px 0;
         border-top: 1px solid var(--line);
       }
-      h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+      h2 {
+        font-size: clamp(2rem, 3vw, 2.7rem);
+      }
       .intro { color: var(--muted); max-width: 42em; margin-bottom: 36px; }
       .seats {
         list-style: none;
@@ -122,9 +159,9 @@
       .cols > div {
         background: rgba(255,255,255,0.6);
         border: 1px solid var(--line);
-        border-radius: 10px;
+        border-radius: 14px;
         padding: 24px;
-        box-shadow: 0 8px 20px var(--shadow);
+        box-shadow: 0 10px 24px rgba(0,0,0,0.02);
       }
       .cols h3 { font-size: 1.3rem; }
       .cols p { margin: 0; color: var(--muted); }
@@ -145,7 +182,7 @@
         align-items: flex-start;
         background: var(--photo-bg);
         border: 1px solid rgba(31, 92, 122, 0.10);
-        border-radius: 14px;
+        border-radius: 16px;
         padding: 14px;
       }
       .about-photo img {
@@ -166,9 +203,9 @@
       .facts {
         background: var(--surface);
         border: 1px solid var(--line);
-        border-radius: 10px;
+        border-radius: 12px;
         padding: 24px;
-        margin-top: 8px;
+        margin-top: 12px;
       }
       .facts dt {
         font-weight: 700;
@@ -210,6 +247,7 @@
 
     <main>
       <div class="wrap hero">
+        <p class="eyebrow">Board Director | Governance Consultant</p>
         <h1>Governance advice from someone who has held the seat.</h1>
         <p class="lede">
           Director and consultant to boards and executive teams. Three terms on city council,
@@ -217,8 +255,8 @@
           practical understanding of how strategy, governance, and accountability meet in the real world.
         </p>
         <div class="btns">
-          <a class="btn" href="#contact">Start a conversation</a>
-          <a class="btn alt" href="#experience">See the record</a>
+          <a class="btn primary" href="#contact">Start a conversation</a>
+          <a class="btn secondary" href="#experience">See the record</a>
         </div>
       </div>
 
@@ -331,8 +369,8 @@
           <h2>Let’s talk about your board</h2>
           <p class="intro">Whether you are filling a seat or strengthening the table you have, I am glad to start with a conversation.</p>
           <div class="btns">
-            <a class="btn" href="mailto:gmickkelly@hotmail.com">Email me</a>
-            <a class="btn alt" href="https://www.linkedin.com/in/mickkellymbacfp/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+            <a class="btn primary" href="mailto:gmickkelly@hotmail.com">Email me</a>
+            <a class="btn secondary" href="https://www.linkedin.com/in/mickkellymbacfp/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
           </div>
           <p class="intro" style="margin-top: 20px; margin-bottom: 0;">gmickkelly@hotmail.com</p>
         </section>
