@@ -4,7 +4,7 @@ Mick Kelly, MBA, CFP
 
 # Governance advice from someone who has held the seat.
 
-Director and consultant to boards and executive teams. Three terms on city council, seats on hospital, library and regional boards, a career in financial services, and a company built from lease signing to opening day.
+Director and consultant to boards and executive teams. Three terms on city council, seats on hospital, library and regional boards, a career in financial services, and a company built from lease situations to employee purchases and executive operations.
 
 [Start a conversation](#contact)[See the record](#experience)
 
@@ -31,12 +31,12 @@ Banking and public service, then a company of my own. Each taught a different si
 
    ### Senior Consultant, Regional Vice President and National Vice President Sales, Standard Life
 
-   Helped develop and implement a business consultancy program guiding small business owners on marketing, client segmentation and operational efficiency. As National Vice President, oversaw a staff of 100 across Canada generating $4 billion in product sales.
+   Helped develop and implement a business consultancy program guiding small business owners on marketing, client segmentation and operational efficiency. As National Vice President, oversaw a staff of nearly 1,000 and the sales operations for commercial planning and sales development.
 5. 2019–2023
 
    ### Lead co-founder, Crossmedia Canada (Sensea Immersive)
 
-   Led incorporation, lease agreements, facility construction, operating structure and all marketing, with HR and expense oversight in a COO role. Wound the company down in 2023 and moved the equipment to a partner in Mexico for better market opportunities.
+   Led incorporation, lease agreements, facility construction, operating structure and all marketing, with HR and expense oversight in a COO role. Wound the company down in 2023 and moved the equipment to Mexico.
 6. Now
 
    ### Virtual reality facility, Panama City
@@ -65,13 +65,13 @@ Drawing on years in elected office, chambers and tourism bodies to navigate publ
 
 ## About
 
-My path to the boardroom was not a straight line. I started out as a pilot in training with the Canadian Armed Forces, and worked as a lifeguard, a muffler shop hand, a gas pipeline worker and a retail department manager before banking.
+My path to the boardroom was not a straight line. I started out as a pilot in training with the Canadian Armed Forces, and worked as a lifeguard, a muffler shop hand, a gas pipeline worker and a representative in the insurance industry.
 
-Public office taught me how to serve many stakeholders at once. Banking taught me discipline with other people’s money. Building a company taught me what it feels like when the plan meets the lease, the contractors and the payroll.
+Public office taught me how to serve many stakeholders at once. Banking taught me discipline with other people’s money. Building a company taught me what it feels like when the plan meets the reality of operations and people.
 
 I am based in Panama and open to remote board and advisory roles, with some travel.
 
-Mick Kelly smiling, wearing a dark blazer and a blue checked shirt
+<img src="./0009-Mick-Kelly-0223-web.jpeg" alt="Mick Kelly" width="500">
 
 Credentials
 
